@@ -8,7 +8,7 @@
     >
       <v-img
       
-        :src="image"  :aspect-ratio="16/9"
+        :src="image"  :aspect-ratio="16/9" class="rounded-xl"
       >
         <v-expand-transition>
           <div
@@ -16,7 +16,7 @@
             class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal text-h2 white--text"
             style="height: 100%;"
           >
-          <v-img :src="image" ></v-img>
+          <v-img :src="image" :aspect-ratio="16/9" class="rounded-xl"></v-img>
           </div>
         </v-expand-transition>
       </v-img>

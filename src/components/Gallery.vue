@@ -53,7 +53,7 @@ export default {
       this.imgs = ['https://i.loli.net/2018/11/10/5be6852cdb002.jpeg',
           'https://i.loli.net/2018/11/10/5be6852ce6965.jpeg/',
           'https://i.loli.net/2018/11/10/5be6852dec46e.jpeg',]
-      this.index = 1  // index of imgList
+      this.index = 0  // index of imgList
       this.show()
     },
     show() {

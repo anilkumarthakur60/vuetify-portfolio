@@ -6,7 +6,7 @@
                     >
                 </v-img>
                 <h1 class="red--text text-h5 text-left ml-4 my-5" >{{ name }}</h1>
-                    <p class="text-justify px-4 "> {{ text }}</p>
+                    <p class="text-justify px-4 pb-5"> {{ text }}</p>
 
         </v-card>
     </v-col>

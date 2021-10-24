@@ -8,7 +8,7 @@
         <h5 class=" font-weight-bold text-sm-h5 text-lg-h5 text-md-h5 my-5">Creative Software Developer based in Kathmandu, Nepal</h5>
         
         <p class="text-justify font-weight-medium ">
-           I'm Creative  Web Developer, and I'm very passionate and dedicated to my work. With 1year plus years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.
+           I'm  Web Developer, and very passionate and dedicated to my work. With 1year plus years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.
             <br>
             <br>
             I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface and meaningful interactions. Check out my Portfolio

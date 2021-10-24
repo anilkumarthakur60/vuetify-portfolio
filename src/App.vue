@@ -5,7 +5,8 @@
       app
        absolute
       left
-      temporary
+      temporary  
+     
       
     >
       <v-list-item>
@@ -79,12 +80,11 @@
         drawer: null,
         items: [
           { title: 'Home', icon: 'mdi-home' ,to:'/'},
-          { title: 'About Me', icon: 'mdi-image' ,to:'/about-me'},
-          { title: 'Portfolio', icon: 'mdi-help-box' ,to:'/portfolio'},
-          { title: 'Projects', icon: 'mdi-help-box' ,to:'/projects'},
-          { title: 'Gallery', icon: 'mdi-help-box' ,to:'/gallery'},
-          { title: 'Contact Me', icon: 'mdi-help-box' ,to:'/contact-me'},
-          { title: 'Feature', icon: 'mdi-help-box' ,to:'/feature'},
+          { title: 'Feature', icon: 'mdi-star-circle' ,to:'/feature'},
+          { title: 'Portfolio', icon: 'mdi-face-man-profile' ,to:'/portfolio'},
+          { title: 'About Me', icon: 'mdi-information-variant' ,to:'/about-me'},
+          { title: 'Gallery', icon: 'mdi-view-gallery-outline' ,to:'/gallery'},
+          { title: 'Contact Me', icon: 'mdi-card-account-phone' ,to:'/contact-me'},
         ],
         right: null,
       }

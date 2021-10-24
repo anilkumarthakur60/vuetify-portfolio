@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import Home from '@/components/Home'
 import About from '@/components/About'
 import Portfolio from '@/components/Portfolio'
-import Project from '@/components/Project'
 import Gallery from '@/components/Gallery'
 import Contact from '@/components/Contact'
 import Feature from '@/components/Feature'
@@ -25,11 +24,7 @@ const routes = [{
         name: 'Portfolio',
         component: Portfolio,
     },
-    {
-        path: '/projects',
-        name: 'Project',
-        component: Project
-    },
+
     {
         path: '/gallery',
         name: 'Gallery',
