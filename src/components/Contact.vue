@@ -17,9 +17,8 @@
             <div class=" text-subtitle-2 mt-5">I am available for freelance work. Connect with me via and call in to my account.</div>
             <div class=" text-subtitle-2 mt-5">Phone: <span class="red--text">+977-9808711001</span></div>
             <div class=" text-subtitle-2 mt-5">Email:
-              <span class="red--text">
-                
-              </span></div>
+                <v-btn :text="true" plain  class=" text-lowercase"    href="mailto:anilkumarthakur60@gmail.com">anilkumarthakur60@gmail.com</v-btn>
+              </div>
 
         </v-card>
       </v-col>

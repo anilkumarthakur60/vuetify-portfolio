@@ -18,8 +18,10 @@
 
   <div class="">
     <v-row>
-      <v-col lg="3" md="4" sm="6" v-for="(img,x) in imgs" :key="x">
-    <v-img  :src="img" :aspect-ratio="16/9" @click="showMultiple" class="rounded-xl"></v-img>
+      <v-col lg="3" md="4" sm="6" v-for="(img,x) in imgs" :key="x" :elevation="hover ? 24 : 6">
+        <v-card :elevation="hover ? 24 : 6" class="rounded-xl">
+    <v-img  :src="img" :aspect-ratio="16/9" @click="showMultiple"  class="rounded-xl"></v-img>
+    </v-card>
       </v-col>
     </v-row>
   </div>
@@ -34,9 +36,18 @@ export default {
   },
   data() {
     return {
-       imgs: ['https://i.loli.net/2018/11/10/5be6852cdb002.jpeg',
-          'https://i.loli.net/2018/11/10/5be6852ce6965.jpeg/',
-          'https://i.loli.net/2018/11/10/5be6852dec46e.jpeg',],
+       imgs: [
+         require('../assets/portfolio/meriaamai.jpg'),
+            require('../assets/portfolio/videochat.jpg'),
+            require('../assets/portfolio/ecoomerce.jpg'),
+            require('../assets/portfolio/medmax.jpg'),
+            require('../assets/portfolio/medmaxchain.jpg'),
+            require('../assets/portfolio/blog.jpg'),
+            require('../assets/portfolio/visitnepal.jpg'),
+            require('../assets/portfolio/htmlportfolio.jpg'),
+            require('../assets/portfolio/calculator.jpg'),
+          
+         ],
       visible: false,
       index: 0   // default
     }
@@ -50,9 +61,6 @@ export default {
         this.show()
     },
     showMultiple() {
-      this.imgs = ['https://i.loli.net/2018/11/10/5be6852cdb002.jpeg',
-          'https://i.loli.net/2018/11/10/5be6852ce6965.jpeg/',
-          'https://i.loli.net/2018/11/10/5be6852dec46e.jpeg',]
       this.index = 0  // index of imgList
       this.show()
     },
