@@ -22,6 +22,7 @@ jobs:
       - name: Deploy
         uses: anilkumarthakur60/vuetify-portfolio@main
         env:
-          REPO: git@github.com:owner/repo.git
+          REPO: git@github.com:anilkumarthakur60/vuetify-portfolio.git
+
           BRANCH: gh-pages
           FOLDER: build
