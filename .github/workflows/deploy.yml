@@ -20,7 +20,7 @@ jobs:
           npm run build
 
       - name: Deploy
-        uses: anilkumarthakur60/vuetify-portfolio@gh-pages
+        uses: anilkumarthakur60/vuetify-portfolio@main
         env:
           REPO: git@github.com:owner/repo.git
           BRANCH: gh-pages
