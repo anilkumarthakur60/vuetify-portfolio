@@ -12,9 +12,9 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@main
       - name: Create Node Environment
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v1
         with:
-          node-version: 16.x
+          node-version: 10.x
       - name: Install Packages and Build Application
         run: |
           npm install -g @vue/cli yarn
@@ -26,4 +26,4 @@ jobs:
           REPO: self
           BRANCH: main
           FOLDER: dist
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets. 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}}
