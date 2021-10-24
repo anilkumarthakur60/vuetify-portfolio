@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to Github Pages
 on:
   push:
     branches:
@@ -6,23 +6,24 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to GitHub Pages
+    name: Deploy Application
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - name: Checkout Repo
+        uses: actions/checkout@main
+      - name: Create Node Environment
+        uses: actions/setup-node@v2
         with:
-          node-version: 10.x
-      - name: npm install and build
+          node-version: 16.x
+      - name: Install Packages and Build Application
         run: |
-          npm install
-          npm run build
-
+          npm install -g @vue/cli yarn
+          yarn install
+          yarn build
       - name: Deploy
         uses: anilkumarthakur60/vuetify-portfolio@main
         env:
-          REPO: git@github.com:anilkumarthakur60/vuetify-portfolio.git
-
-          BRANCH: gh-pages
-          FOLDER: build
+          REPO: self
+          BRANCH: main
+          FOLDER: dist
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
