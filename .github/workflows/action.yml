@@ -14,7 +14,7 @@ jobs:
       - name: Create Node Environment
         uses: actions/setup-node@v1
         with:
-          node-version: 10.x
+          node-version: 16.x
       - name: Install Packages and Build Application
         run: |
           npm install -g @vue/cli yarn
@@ -26,4 +26,4 @@ jobs:
           REPO: self
           BRANCH: main
           FOLDER: dist
-          GITHUB_TOKEN: ${{ secrets. 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}}
+          GITHUB_TOKEN: ${{ secrets.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}}
