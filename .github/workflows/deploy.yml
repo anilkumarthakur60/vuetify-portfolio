@@ -1,24 +1,27 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   deploy:
-    name: Deploy
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
-      # Any prerequisite steps
       - uses: actions/checkout@main
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      - name: npm install and build
+        run: |
+          npm install
+          npm run build
 
-      # Deploy to local repo
       - name: Deploy
-        uses: anilkumarthakur60/vuetify-portfolio@main
+        uses: anilkumarthakur60/vuetify-portfolio@gh-pages
         env:
-          REPO: self
-          BRANCH: gh-pages
-          FOLDER: build
-
-      # Deploy to another repo
-      - name: Deploy
-        uses: anilkumarthakur60/vuetify-portfolio@main
-        env:
-          REPO: git@github.com:anilkumarthakur60/vuetify-portfolio.git
-
+          REPO: git@github.com:owner/repo.git
           BRANCH: gh-pages
           FOLDER: build
