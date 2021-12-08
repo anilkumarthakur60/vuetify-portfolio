@@ -2,13 +2,13 @@
  <v-col lg="3" md="3" sm="12">
   <v-hover v-slot="{ hover }"  >
     <v-card
-      class="mx-auto"
-      color=" "
+      class="mx-auto rounded-xl"
+      
     
     >
       <v-img
       
-        :src="image"  :aspect-ratio="16/9" class="rounded-xl"
+        :src="image"   class="rounded-xl "
       >
         <v-expand-transition>
           <div
@@ -16,7 +16,7 @@
             class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal text-h2 white--text"
             style="height: 100%;"
           >
-          <v-img :src="image" :aspect-ratio="16/9" class="rounded-xl"></v-img>
+          <v-img :src="image"  class="rounded-xl"></v-img>
           </div>
         </v-expand-transition>
       </v-img>

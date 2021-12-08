@@ -10,34 +10,34 @@ import Feature from '@/components/Feature'
 Vue.use(VueRouter)
 
 const routes = [{
-        path: '/',
+        path: '',
         name: 'Home',
         component: Home
     },
     {
-        path: '/about-me',
+        path: 'about-me',
         name: 'About',
         component: About
     },
     {
-        path: '/portfolio',
+        path: 'portfolio',
         name: 'Portfolio',
         component: Portfolio,
     },
 
     {
-        path: '/gallery',
+        path: 'gallery',
         name: 'Gallery',
         component: Gallery
     },
 
     {
-        path: '/contact-me',
+        path: 'contact-me',
         name: 'Contact',
         component: Contact
     },
     {
-        path: '/feature',
+        path: 'feature',
         name: 'Feature',
         component: Feature
     }

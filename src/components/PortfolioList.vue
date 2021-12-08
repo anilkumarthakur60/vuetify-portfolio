@@ -1,7 +1,7 @@
 <template>
     <v-col lg="3" md="4" sm="12">
         <v-card >
-              <v-img :aspect-ratio="16/9" class="rounded-xl"
+              <v-img  class="rounded-xl"
                     :src="image"
                     >
                 </v-img>

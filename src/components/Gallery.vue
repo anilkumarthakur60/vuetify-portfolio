@@ -1,31 +1,41 @@
 <template>
-<div class="">
-     <!-- <button @click="showSingle">Single Lightbox.</button>
-    <button @click="showMultiple">Gallery Lightbox</button> -->
-    <!-- all props & events -->
-    <vue-easy-lightbox
-      
-      
-      
-      :visible="visible"
-      :imgs="imgs"
-      :index="index"
-      
-      @hide="handleHide"
-    >
+   <v-row>
+       <v-col sm="12" md="4" lg="4" v-for="img in imgs" :key="img">
+       
+          <v-responsive>
+           
+        <v-card class="mx-auto pa-4 " rounded="xl" 
+         
+        >
+           <v-img :src="img"  @click="showMultiple"    class="rounded-xl"></v-img>
+        </v-card>
     
-    </vue-easy-lightbox>
+          </v-responsive>
+     </v-col>
+    
 
-  <div class="">
-    <v-row>
-      <v-col lg="3" md="4" sm="6" v-for="(img,x) in imgs" :key="x" :elevation="hover ? 24 : 6">
-        <v-card :elevation="hover ? 24 : 6" class="rounded-xl">
-    <v-img  :src="img" :aspect-ratio="16/9" @click="showMultiple"  class="rounded-xl"></v-img>
-    </v-card>
-      </v-col>
-    </v-row>
-  </div>
-</div>
+
+<v-col>
+ 
+     <v-col sm="12" md="4" lg="3">
+      <vue-easy-lightbox
+                       
+            :visible="visible"
+            :imgs="imgs"
+            :index="index"
+            
+            @hide="handleHide"
+          >
+          
+          </vue-easy-lightbox>
+     </v-col>
+     
+</v-col>
+
+
+   </v-row>
+   
+
 </template>
 <script>
 import VueEasyLightbox from 'vue-easy-lightbox'
@@ -36,6 +46,8 @@ export default {
   },
   data() {
     return {
+            transparent: 'rgba(255, 255, 255, 0)',
+
        imgs: [
          require('../assets/portfolio/meriaamai.jpg'),
             require('../assets/portfolio/videochat.jpg'),

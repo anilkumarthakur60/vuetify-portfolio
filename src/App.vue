@@ -3,7 +3,7 @@
     <v-navigation-drawer
       v-model="drawer"
       app
-       absolute
+       relative
       left
       temporary  
      
@@ -30,6 +30,7 @@
           v-for="item in items"
           :key="item.title"
           link  :to="item.to"
+          
         >
           <v-list-item-icon 
           >
