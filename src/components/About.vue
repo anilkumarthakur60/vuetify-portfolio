@@ -4,7 +4,7 @@
       <v-img src="@/assets/anil.jpg"> </v-img>
     </v-col>
     <v-col lg="6" md="6" sm="12">
-      <h3 class="font-weight-bold text-sm-h3 text-lg-h3 text-md-h3 my-5">
+      <h3 class="font-weight-bold text-sm-h3 text-lg-h4 text-md-h3 my-5">
         About Me
       </h3>
       <h5 class="font-weight-bold text-sm-h5 text-lg-h5 text-md-h5 my-5">
@@ -27,29 +27,26 @@
 
       <div class="d-flex">
         <v-icon color="success " class="mr-4">mdi-check-all</v-icon>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          dolorem alias, nostrum ipsum repellat, excepturi numquam nulla aut
-          officia aspernatur pariatur consequatur a tempore dolorum obcaecati
-          error expedita totam tenetur?
-        </p>
+        <p>Helping with the design and development of web application</p>
       </div>
       <div class="d-flex">
         <v-icon color="success " class="mr-4">mdi-check-all</v-icon>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          dolorem alias, nostrum ipsum repellat, excepturi numquam nulla aut
-          officia aspernatur pariatur consequatur a tempore dolorum obcaecati
-          error expedita totam tenetur?
-        </p>
+        <p>Testing and debugging software to keep it optimized</p>
       </div>
       <div class="d-flex">
         <v-icon color="success " class="mr-4">mdi-check-all</v-icon>
+        <p>Writing clean code for the front and back end for reusability</p>
+      </div>
+      <div class="d-flex">
+        <v-icon color="success " class="mr-4">mdi-check-all</v-icon>
+        <p>Developing APIs and RESTful services</p>
+      </div>
+
+      <div class="d-flex">
+        <v-icon color="success " class="mr-4">mdi-check-all</v-icon>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          dolorem alias, nostrum ipsum repellat, excepturi numquam nulla aut
-          officia aspernatur pariatur consequatur a tempore dolorum obcaecati
-          error expedita totam tenetur?
+          Considering security, maintenance, scalability, and more when
+          developing
         </p>
       </div>
 

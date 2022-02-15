@@ -5,11 +5,11 @@
         >VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</v-subheader
       >
       <div
-        class="justify-center font-weight-bold text-lg-h2 text-md-h3 text-sm-h3"
+        class="justify-center font-weight-bold text-lg-h4 text-md-h3 text-sm-h3"
       >
         My Portfolio
       </div>
-      <v-row class="mt-10">
+      <v-row class="mt-6">
         <portfolio-list
           v-for="(portfoliolist, x) in portfoliolists"
           :key="x"

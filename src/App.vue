@@ -1,18 +1,10 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-       relative
-      left
-      temporary  
-     
-      
-    >
+    <v-navigation-drawer v-model="drawer" app relative left temporary>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6 text-center">
-            Anil Kumar Thakur
+            Er. Anil Kumar Thakur
           </v-list-item-title>
           <v-list-item-subtitle class="text-center">
             Full Stack Developer
@@ -22,22 +14,13 @@
 
       <v-divider></v-divider>
 
-      <v-list
-        dense
-        nav
-      >
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          link  :to="item.to"
-          
-        >
-          <v-list-item-icon 
-          >
+      <v-list dense nav>
+        <v-list-item v-for="item in items" :key="item.title" link :to="item.to">
+          <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
 
-          <v-list-item-content >
+          <v-list-item-content>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -48,20 +31,15 @@
     <v-app-bar app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title> 
-       
-      </v-toolbar-title>
+      <v-toolbar-title> </v-toolbar-title>
       <v-spacer></v-spacer>
-     
-     <v-switch
-        v-model="$vuetify.theme.dark"
-       
-        inset
-      
-        persistent-hint class="mt-5"
-      ></v-switch>
 
-     
+      <v-switch
+        v-model="$vuetify.theme.dark"
+        inset
+        persistent-hint
+        class="mt-5"
+      ></v-switch>
     </v-app-bar>
 
     <v-main>
@@ -75,26 +53,30 @@
 
 
 <script>
-  export default {
-    data () {
-      return {
-        drawer: null,
-        items: [
-          { title: 'Home', icon: 'mdi-home' ,to:'/'},
-          { title: 'Feature', icon: 'mdi-star-circle' ,to:'/feature'},
-          { title: 'Portfolio', icon: 'mdi-face-man-profile' ,to:'/portfolio'},
-          { title: 'About Me', icon: 'mdi-information-variant' ,to:'/about-me'},
-          { title: 'Gallery', icon: 'mdi-view-gallery-outline' ,to:'/gallery'},
-          { title: 'Contact Me', icon: 'mdi-card-account-phone' ,to:'/contact-me'},
-        ],
-        right: null,
-      }
-    },
-  }
+export default {
+  data() {
+    return {
+      drawer: null,
+      items: [
+        { title: "Home", icon: "mdi-home", to: "/" },
+        { title: "Feature", icon: "mdi-star-circle", to: "/feature" },
+        { title: "Portfolio", icon: "mdi-face-man-profile", to: "/portfolio" },
+        { title: "About Me", icon: "mdi-information-variant", to: "/about-me" },
+        { title: "Gallery", icon: "mdi-view-gallery-outline", to: "/gallery" },
+        {
+          title: "Contact Me",
+          icon: "mdi-card-account-phone",
+          to: "/contact-me",
+        },
+      ],
+      right: null,
+    };
+  },
+};
 </script>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-body{
-  font-family: 'Poppins', sans-serif;;
+body {
+  font-family: "Poppins", sans-serif;
 }
 </style>

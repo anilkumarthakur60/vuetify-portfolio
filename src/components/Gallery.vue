@@ -1,11 +1,30 @@
 <template>
   <v-row>
-    <v-col sm="12" md="4" lg="4" v-for="img in imgs" :key="img">
-      <v-responsive>
-        <v-card class="mx-auto pa-4" rounded="xl">
-          <v-img :src="img" @click="showMultiple" class="rounded-xl"></v-img>
+    <v-col
+      sm="12"
+      md="4"
+      lg="4"
+      v-for="img in imgs"
+      :key="img"
+      class="d-flex child-flex"
+    >
+      <v-hover v-slot="{ hover }">
+        <v-card
+          :elevation="hover ? 12 : 2"
+          :class="{ 'on-hover': hover }"
+          rounded="xl"
+        >
+          <v-responsive>
+            <v-card class="mx-auto pa-4" rounded="xl">
+              <v-img
+                :src="img"
+                @click="showMultiple"
+                class="rounded-xl"
+              ></v-img>
+            </v-card>
+          </v-responsive>
         </v-card>
-      </v-responsive>
+      </v-hover>
     </v-col>
 
     <v-col>

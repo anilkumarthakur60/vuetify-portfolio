@@ -32,7 +32,7 @@
         </v-flex>
       </v-layout>
     </v-col>
-    <v-col lg="6" md="12" sm="12" order-md="12" order-sm="12">
+    <v-col lg="6" md="12" sm="12" order-md="12" order-sm="12" class="mt-lg-8">
       <v-layout
         row
         wrap
