@@ -4,8 +4,9 @@
       sm="12"
       md="4"
       lg="4"
-      v-for="img in imgs"
-      :key="img"
+      v-for="(img, index) in imgs"
+      :key="index"
+      @click="() => showImg(index)"
       class="d-flex child-flex"
     >
       <v-hover v-slot="{ hover }">
@@ -73,6 +74,10 @@ export default {
         src: "https://i.loli.net/2018/11/10/5be6852dec46e.jpeg",
       };
       this.show();
+    },
+    showImg(index) {
+      this.index = index;
+      this.visible = true;
     },
     showMultiple() {
       this.index = 0; // index of imgList
