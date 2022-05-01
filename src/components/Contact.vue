@@ -42,9 +42,15 @@
         </v-hover>
       </v-col>
       <v-col sm="12" lg="8" md="8">
-        <v-card rounded="lg" class="pa-5">
-          <forms></forms>
-        </v-card>
+        <v-hover v-slot="{ hover }">
+          <v-card
+            class="pb-5 pa-4 rounded-xl"
+            :elevation="hover ? 12 : 2"
+            :class="{ 'on-hover': hover }"
+          >
+            <forms></forms>
+          </v-card>
+        </v-hover>
       </v-col>
     </v-row>
   </div>

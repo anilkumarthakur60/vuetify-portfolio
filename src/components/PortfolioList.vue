@@ -1,5 +1,5 @@
 <template>
-  <v-col lg="4" md="6" sm="12" class="d-flex child-flex">
+  <v-col lg="3" md="4" sm="6" class="d-flex child-flex">
     <v-hover v-slot="{ hover }">
       <v-card
         :elevation="hover ? 12 : 2"
