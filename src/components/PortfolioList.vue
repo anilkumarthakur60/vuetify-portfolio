@@ -25,7 +25,9 @@
             style="height: 100%"
           >
             <v-card-text class="pb-0">
-              <p class="text-justify text-subtitle-2 px-4 pb-5">{{ text }}</p>
+              <p class="text-justify text-subtitle-2 px-4 pb-5" v-text="text">
+                {{ text }}
+              </p>
             </v-card-text>
             <v-card-actions class="pt-0 card-actions">
               <v-btn text color="teal accent-4" @click="reveal = false">

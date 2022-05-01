@@ -69,6 +69,11 @@ export default {
           image: require("../assets/portfolio/saffroncottages.png"),
           text: "Online Food OrderSystem will primarily provide a platform to order food item  of items, product  through the internet. The Online Food order  Management System will be a huge marketplace as most of the business are going  based on the internet.",
         },
+        {
+          name: "Government Telemedicine",
+          image: require("../assets/portfolio/telemed.png"),
+          text: ' <a href="https://ehealth.solupoly.org/admin/login/595752746157343d"> akjbs</a>.',
+        },
       ],
     };
   },
