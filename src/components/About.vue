@@ -52,7 +52,7 @@
 
       <v-btn
         color="success"
-        href="https://drive.google.com/file/d/1IcK62u-Mvrwk_RMawI0d_XZ8GlkBALUn/view?usp=sharing"
+        href="https://drive.google.com/drive/folders/18QPnAkmyNxLqsHVFgH1YTK_C4PqsuuZo?usp=sharing"
         target="_blank"
       >
         Download My Resume
