@@ -46,16 +46,40 @@
       <v-container>
         <router-view></router-view>
       </v-container>
-      <!--  -->
     </v-main>
+
+    <template>
+      <div class="">
+        <mobile-navigation></mobile-navigation>
+      </div>
+    </template>
+
+    <template>
+      <v-row
+        class="grey lighten-2"
+        v-touch="{
+          left: () => swipe('Left'),
+          right: () => swipe('Right'),
+          up: () => swipe('Up'),
+          down: () => swipe('Down'),
+        }"
+        align="center"
+        justify="center"
+      >
+      </v-row>
+    </template>
   </v-app>
 </template>
 
 
 <script>
+import MobileNavigation from "./components/MobileNavigation.vue";
 export default {
+  components: { MobileNavigation },
   data() {
     return {
+      swipeDirection: "None",
+
       drawer: null,
       items: [
         { title: "Home", icon: "mdi-home", to: "/" },
@@ -71,6 +95,11 @@ export default {
       ],
       right: null,
     };
+  },
+  methods: {
+    swipe(direction) {
+      this.swipeDirection = direction;
+    },
   },
 };
 </script>

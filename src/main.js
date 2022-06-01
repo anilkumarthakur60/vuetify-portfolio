@@ -2,7 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import router from './router'
+import { CurvedBottomNavigation } from "bottom-navigation-vue";
 
+Vue.use(CurvedBottomNavigation);
 
 Vue.config.productionTip = false
 

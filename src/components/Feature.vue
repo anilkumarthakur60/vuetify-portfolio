@@ -24,7 +24,7 @@ export default {
         {
           name: "Front End",
           image: require("../assets/frontend.svg"),
-          text: "Frontend Developer  with 1.5  years experience building and maintaining responsive websites . Proficient in  modern web technology and frameworks like Vue js, Inertia JS ,Bootstrap ,Vuetify.",
+          text: "Frontend Developer  with 2  years experience building and maintaining responsive websites . Proficient in  modern web technology and frameworks like Vue js, Inertia JS ,Bootstrap ,Vuetify.",
         },
         {
           name: "Backend",

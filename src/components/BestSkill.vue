@@ -9,6 +9,7 @@
         :key="x"
         :colorname="icon.colorname"
         :iconname="icon.iconname"
+        :tooltips="icon.tooltips"
       ></best-skill-list>
     </v-row>
   </v-col>
@@ -21,13 +22,30 @@ export default {
   data() {
     return {
       icons: [
-        { colorname: "red", iconname: "mdi-laravel" },
-        { colorname: "green", iconname: "mdi-vuejs" },
-        { colorname: "indigo", iconname: "mdi-bootstrap" },
-        { colorname: "primary", iconname: "mdi-jquery" },
-        { colorname: "amber", iconname: "mdi-language-javascript" },
+        { colorname: "red", iconname: "mdi-laravel", tooltips: "Laravel " },
+        { colorname: "green", iconname: "mdi-vuejs", tooltips: "VueJs" },
+        {
+          colorname: "indigo",
+          iconname: "mdi-bootstrap",
+          tooltips: "Bootstrap",
+        },
+        { colorname: "primary", iconname: "mdi-jquery", tooltips: "jQuery" },
+        {
+          colorname: "amber",
+          iconname: "mdi-language-javascript",
+          tooltips: "JavaScript ",
+        },
 
-        { colorname: "indigo accent-4", iconname: "mdi-language-css3" },
+        {
+          colorname: "indigo accent-4",
+          iconname: "mdi-language-css3",
+          tooltips: "Cascading Style Sheets",
+        },
+        {
+          colorname: "indigo accent-4",
+          iconname: "inertia-js",
+          tooltips: "InertiaJs",
+        },
       ],
     };
   },
