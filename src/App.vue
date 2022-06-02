@@ -49,8 +49,9 @@
     </v-main>
 
     <template>
-      <div class="">
+      <div class="d-lg-none d-xl-flex">
         <mobile-navigation></mobile-navigation>
+        <!-- <mobilenavs></mobilenavs> -->
       </div>
     </template>
 
@@ -73,7 +74,7 @@
 
 
 <script>
-import MobileNavigation from "./components/MobileNavigation.vue";
+import MobileNavigation from './components/MobileNavigation.vue';
 export default {
   components: { MobileNavigation },
   data() {

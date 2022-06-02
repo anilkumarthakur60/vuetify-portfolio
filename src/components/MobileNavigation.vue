@@ -1,5 +1,9 @@
 <template>
-  <CurvedBottomNavigation :options="options" v-model="selected" />
+  <CurvedBottomNavigation
+    :options="options"
+    v-model="selected"
+    :replaceRoute="true"
+  />
 </template>
 
 <script>
@@ -13,18 +17,39 @@ export default {
       {
         id: 1,
         icon: "fas fa-wallet",
-        title: "Featured",
-        path: { name: "#/feature" },
+        title: "Feature",
+        path: { name: "Feature" },
       },
-      { id: 2, icon: "fas fa-wallet", title: "Wallet" },
+      {
+        id: 2,
+        icon: "fas fa-wallet",
+        title: "Portfolio",
+        path: { name: "Portfolio" },
+      },
       {
         id: 3,
         icon: "fas fa-home",
         title: "Home",
-        path: { name: "/" },
+        path: { name: "Home" },
       },
-      { id: 4, icon: "fas fa-wallet", title: "Wallet" },
-      { id: 5, icon: "fas fa-wallet", title: "Wallet" },
+      {
+        id: 4,
+        icon: "fas fa-wallet",
+        title: "Gallery",
+        path: { name: "Gallery" },
+      },
+      {
+        id: 5,
+        icon: "fas fa-wallet",
+        title: "About Me",
+        path: { name: "About" },
+      },
+      {
+        id: 6,
+        icon: "fas fa-wallet",
+        title: "Contact Me",
+        path: { name: "Contact" },
+      },
     ],
   }),
 };
