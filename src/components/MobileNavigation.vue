@@ -16,27 +16,28 @@ export default {
     options: [
       {
         id: 1,
-        icon: "fas fa-wallet",
+        icon: "fas fa-fire",
         title: "Feature",
         path: { name: "Feature" },
       },
       {
         id: 2,
-        icon: "fas fa-wallet",
+        icon: "fas fa-circle-notch",
         title: "Portfolio",
         path: { name: "Portfolio" },
       },
+
       {
         id: 3,
-        icon: "fas fa-home",
-        title: "Home",
-        path: { name: "Home" },
+        icon: "fas fa-images",
+        title: "Gallery",
+        path: { name: "Gallery" },
       },
       {
         id: 4,
-        icon: "fas fa-wallet",
-        title: "Gallery",
-        path: { name: "Gallery" },
+        icon: "fas fa-home",
+        title: "Home",
+        path: { name: "Home" },
       },
       {
         id: 5,
@@ -46,6 +47,12 @@ export default {
       },
       {
         id: 6,
+        icon: "fas fa-wallet",
+        title: "Contact Me",
+        path: { name: "Contact" },
+      },
+      {
+        id: 7,
         icon: "fas fa-wallet",
         title: "Contact Me",
         path: { name: "Contact" },

@@ -4,8 +4,9 @@
       <v-subheader class="justify-center"
         >VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</v-subheader
       >
+
       <div
-        class="justify-center font-weight-bold text-lg-h4 text-md-h3 text-sm-h3"
+        class="justify-center font-weight-bold text-lg-h5 text-md-h5 text-sm-h5"
       >
         My Portfolio
       </div>

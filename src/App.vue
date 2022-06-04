@@ -25,11 +25,13 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-      <!--  -->
     </v-navigation-drawer>
 
     <v-app-bar app>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        class="d-none d-lg-flex"
+        @click="drawer = !drawer"
+      ></v-app-bar-nav-icon>
 
       <v-toolbar-title> </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -48,12 +50,11 @@
       </v-container>
     </v-main>
 
-    <template>
+    <!-- <template>
       <div class="d-lg-none d-xl-flex">
         <mobile-navigation></mobile-navigation>
-        <!-- <mobilenavs></mobilenavs> -->
       </div>
-    </template>
+    </template> -->
 
     <template>
       <v-row
@@ -74,9 +75,9 @@
 
 
 <script>
-import MobileNavigation from './components/MobileNavigation.vue';
+// import MobileNavigation from "./components/MobileNavigation.vue";
 export default {
-  components: { MobileNavigation },
+  // components: { MobileNavigation },
   data() {
     return {
       swipeDirection: "None",

@@ -1,17 +1,27 @@
 <template>
-  <div class="">
-    <h6 class="text-h6">Feature</h6>
-    <h1 class="font-weight-bold">What I DO</h1>
-    <v-row>
-      <what-i-do
-        v-for="whatisodolist in whatidolists"
-        :name="whatisodolist.name"
-        :image="whatisodolist.image"
-        :text="whatisodolist.text"
-        :key="whatisodolist.name"
-      ></what-i-do>
-    </v-row>
-  </div>
+  <v-row>
+    <v-col sm="12">
+      <v-subheader class="justify-center"
+        >VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</v-subheader
+      >
+      <div class="text-h5 text-center font-weight-bold">My Portfolio</div>
+    </v-col>
+    <v-col></v-col>
+    <div class="">
+      <div
+        class="justify-center font-weight-bold text-lg-h5 text-md-h5 text-sm-h5"
+      ></div>
+      <v-row>
+        <what-i-do
+          v-for="whatisodolist in whatidolists"
+          :name="whatisodolist.name"
+          :image="whatisodolist.image"
+          :text="whatisodolist.text"
+          :key="whatisodolist.name"
+        ></what-i-do>
+      </v-row>
+    </div>
+  </v-row>
 </template>
 <script>
 import WhatIDo from "./WhatIDo.vue";
