@@ -93,7 +93,7 @@ export default {
   name: "About",
   components: {},
   mounted() {
-    document.title = "Er.Anil Kumar Thakur| About Me";
+    document.title = "Er. Anil Kumar Thakur| About Me";
   },
   methods: {
     alertDisplay() {},

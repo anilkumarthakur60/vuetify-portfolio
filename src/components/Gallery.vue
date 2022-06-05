@@ -137,7 +137,7 @@ export default {
     },
   },
   mounted() {
-    document.title = "Er.Anil Kumar Thakur | My Gallery";
+    document.title = "Er. Anil Kumar Thakur | My Gallery";
   },
 };
 </script>

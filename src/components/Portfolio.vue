@@ -80,7 +80,7 @@ export default {
     };
   },
   mounted() {
-    document.title = "Er.Anil Kumar Thakur | My Portfoli";
+    document.title = "Er. Anil Kumar Thakur | My Portfoli";
   },
 };
 </script>

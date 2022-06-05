@@ -60,7 +60,7 @@ export default {
     };
   },
   mounted() {
-    document.title = "Er.Anil Kumar Thakur | Feature";
+    document.title = "Er. Anil Kumar Thakur | Feature";
   },
 };
 </script>

@@ -59,7 +59,7 @@ export default {
   components: { TextType, BestSkill, SocialMedia },
   name: "Home",
   mounted() {
-    document.title = "Er.Anil Kumar Thakur | Home";
+    document.title = "Er. Anil Kumar Thakur | Home";
   },
 };
 </script>
