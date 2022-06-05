@@ -43,7 +43,7 @@
         text-xs-center
       >
         <v-flex>
-          <v-img src="@/assets/anil.jpg"> </v-img>
+          <v-img src="@/assets/portfolio/anil.png"> </v-img>
         </v-flex>
       </v-layout>
     </v-col>
