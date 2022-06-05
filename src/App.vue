@@ -45,13 +45,13 @@
     </v-app-bar>
 
     <v-main>
-      <v-container>
+      <v-container class="mb-5">
         <router-view></router-view>
       </v-container>
     </v-main>
 
     <template>
-      <div class="d-lg-none d-xl-flex">
+      <div class="d-lg-none d-xl-flex mt-5">
         <mobile-navigation></mobile-navigation>
       </div>
     </template>
