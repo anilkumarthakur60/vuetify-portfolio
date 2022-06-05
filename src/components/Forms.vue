@@ -143,7 +143,7 @@ export default {
     submit() {
       this.$refs.observer.validate();
       axios
-        .post("http://api-vuetify.herokuapp.com/api/messages", this.form)
+        .post("https://matrixaccount.herokuapp.com/api/messages", this.form)
         .then((response) => {
           this.$swal(
             "Thank you for contacting me!",
