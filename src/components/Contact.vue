@@ -41,7 +41,7 @@
           </v-card>
         </v-hover>
       </v-col>
-      <v-col sm="12" lg="8" md="8">
+      <v-col sm="12" lg="8" md="8" class="mb-sm-5">
         <v-hover v-slot="{ hover }">
           <v-card
             class="pb-5 pa-4 rounded-xl"
