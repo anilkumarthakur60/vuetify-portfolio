@@ -6,21 +6,26 @@
       >
       <div class="text-h5 text-center font-weight-bold">My Portfolio</div>
     </v-col>
-    <v-col></v-col>
-    <div class="">
-      <div
-        class="justify-center font-weight-bold text-lg-h5 text-md-h5 text-sm-h5"
-      ></div>
-      <v-row>
-        <what-i-do
-          v-for="whatisodolist in whatidolists"
-          :name="whatisodolist.name"
-          :image="whatisodolist.image"
-          :text="whatisodolist.text"
-          :key="whatisodolist.name"
-        ></what-i-do>
-      </v-row>
-    </div>
+    <v-col>
+      <div class="">
+        <div
+          class="
+            justify-center
+            font-weight-bold
+            text-lg-h5 text-md-h5 text-sm-h5
+          "
+        ></div>
+        <v-row>
+          <what-i-do
+            v-for="whatisodolist in whatidolists"
+            :name="whatisodolist.name"
+            :image="whatisodolist.image"
+            :text="whatisodolist.text"
+            :key="whatisodolist.name"
+          ></what-i-do>
+        </v-row>
+      </div>
+    </v-col>
   </v-row>
 </template>
 <script>

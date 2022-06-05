@@ -8,19 +8,19 @@
         About Me
       </h3>
       <h5 class="font-weight-bold text-sm-h5 text-lg-h5 text-md-h5 my-5">
-        Creative Software Developer based in Kathmandu, Nepal
+        Full Stack Web Developer
       </h5>
 
       <p class="text-justify font-weight-medium">
-        I'm Web Developer, and very passionate and dedicated to my work. With
-        1year plus years experience as a professional web developer, I have
-        acquired the skills and knowledge necessary to make your project a
-        success. I enjoy every step of the design process, from discussion and
-        collaboration.
+        I'm full Stack Web Developer, and very passionate and dedicated to my
+        work. With 2 year plus years experience as a professional web developer,
+        I have acquired the skills and knowledge necessary to make your project
+        a success. I enjoy every step of the design and developmet process, from
+        discussion and collaboration.
         <br />
         <br />
         I design and develop services for customers of all sizes, specializing
-        in creating stylish, modern websites, web services and online stores. My
+        in creating stylish, modern web app, web services and online stores. My
         passion is to design digital user experiences through the bold interface
         and meaningful interactions. Check out my Portfolio
       </p>
@@ -35,6 +35,14 @@
       </div>
       <div class="d-flex">
         <v-icon color="success " class="mr-4">mdi-check-all</v-icon>
+        <p>Ensuring cross-platform compatibility and optimization</p>
+      </div>
+      <div class="d-flex">
+        <v-icon color="success " class="mr-4">mdi-check-all</v-icon>
+        <p>Keeping up with technological advances to optimize their software</p>
+      </div>
+      <div class="d-flex">
+        <v-icon color="success " class="mr-4">mdi-check-all</v-icon>
         <p>Writing clean code for the front and back end for reusability</p>
       </div>
       <div class="d-flex">
@@ -42,7 +50,7 @@
         <p>Developing APIs and RESTful services</p>
       </div>
 
-      <div class="d-flex">
+      <div class="d-flex mb-3">
         <v-icon color="success " class="mr-4">mdi-check-all</v-icon>
         <p>
           Considering security, maintenance, scalability, and more when
@@ -57,14 +65,27 @@
       >
         Download My Resume
       </v-btn>
+
+      <v-btn depressed color="primary" class="ml-2" to="/contact-me">
+        Contact Me
+      </v-btn>
+      <v-btn depressed color="primary" class="ml-2" @click="alertDisplay">
+        sweet alett
+      </v-btn>
     </v-col>
   </v-row>
 </template>
 <script>
 export default {
   name: "About",
+  components: {},
   mounted() {
     document.title = "Er.Anil Kumar Thakur| About Me";
   },
+  methods: {
+    alertDisplay() {},
+  },
 };
 </script>
+
+

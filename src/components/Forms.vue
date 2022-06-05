@@ -7,7 +7,7 @@
           auto-grow
           color="primary"
           class="my-lg-6 my-md-4 my-sm-2"
-          v-model="name"
+          v-model="form.name"
           :error-messages="errors"
           label="Name"
           required
@@ -16,14 +16,11 @@
 
       <validation-provider
         v-slot="{ errors }"
-        name="phoneNumber"
+        name="phone"
         :rules="{
           required: true,
           min: 8,
-          max: 13,
-          digits: 8,
-          regex:
-            '/^(?:\+977|0977)?-?(?:(?:(?:98|97)-?\d{8})|(?:01-?\d{7})|(?:0\d{2}-?\d{6}))$/',
+          max: 17,
         }"
       >
         <v-text-field
@@ -31,36 +28,15 @@
           auto-grow
           color="primary"
           class="my-lg-6 my-md-4 my-sm-2"
-          v-model="phoneNumber"
-          :counter="13"
+          v-model="form.phone"
+          :counter="14"
           :error-messages="errors"
           label="Phone Number"
-          name="phone number"
+          name="phone"
           required
         ></v-text-field>
       </validation-provider>
 
-      <validation-provider
-        v-slot="{ errors }"
-        name="phoneNumber"
-        rules="required|"
-      >
-        <v-text-field
-          outlined
-          auto-grow
-          color="primary"
-          class="my-lg-6 my-md-4 my-sm-2"
-          v-model="phoneNumber"
-          :error-messages="errors"
-          label="phoneNumber"
-          :rules="{
-            required: true,
-            min: 8,
-            max: 13,
-            digits: 13,
-          }"
-        ></v-text-field>
-      </validation-provider>
       <validation-provider
         v-slot="{ errors }"
         name="email"
@@ -71,7 +47,7 @@
           auto-grow
           color="primary"
           class="my-lg-6 my-md-4 my-sm-2"
-          v-model="email"
+          v-model="form.email"
           :error-messages="errors"
           label="E-mail"
           required
@@ -82,7 +58,7 @@
           outlined
           auto-grow
           color="primary"
-          v-model="message"
+          v-model="form.message"
           :error-messages="errors"
           label="Message"
           required
@@ -98,6 +74,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 import {
   required,
   digits,
@@ -150,31 +128,42 @@ export default {
     ValidationProvider,
     ValidationObserver,
   },
-  data: () => ({
-    name: "",
-    phoneNumber: "",
-    email: "",
-    select: null,
-    message: "",
-    items: ["Item 1", "Item 2", "Item 3", "Item 4"],
-    checkbox: null,
-  }),
+  data() {
+    return {
+      form: {
+        name: null,
+        email: null,
+        phone: null,
+        message: null,
+      },
+    };
+  },
 
   methods: {
     submit() {
       this.$refs.observer.validate();
+      axios
+        .post("http://api-vuetify.herokuapp.com/api/messages", this.form)
+        .then((response) => {
+          this.$swal(
+            "Thank you for contacting me!",
+            response.data.success,
+            "success"
+          );
+          this.clear();
+        })
+        .catch((error) => {
+          console.log("error", error);
+          this.$swal("Error Occured", error, "error");
+        })
+        .finally(() => (this.loading = false));
     },
     clear() {
-      this.name = "";
-      this.phoneNumber = "";
-      this.email = "";
-      this.message = "";
-      this.select = null;
-      this.checkbox = null;
+      this.form.name = "";
+      this.form.phone = "";
+      this.form.email = "";
+      this.form.message = "";
       this.$refs.observer.reset();
-    },
-    showtoast() {
-      this.$toasted.show("hello billo");
     },
   },
 };

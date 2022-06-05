@@ -50,11 +50,11 @@
       </v-container>
     </v-main>
 
-    <!-- <template>
+    <template>
       <div class="d-lg-none d-xl-flex">
         <mobile-navigation></mobile-navigation>
       </div>
-    </template> -->
+    </template>
 
     <template>
       <v-row
@@ -75,9 +75,9 @@
 
 
 <script>
-// import MobileNavigation from "./components/MobileNavigation.vue";
+import MobileNavigation from "./components/MobileNavigation.vue";
 export default {
-  // components: { MobileNavigation },
+  components: { MobileNavigation },
   data() {
     return {
       swipeDirection: "None",

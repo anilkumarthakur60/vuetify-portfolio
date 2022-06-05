@@ -57,11 +57,42 @@
 </template>
 <script>
 import Forms from "@/components/Forms";
+import axios from "axios";
+
 export default {
   components: { Forms },
   name: "Contact",
   mounted() {
     document.title = "Er.Anil Kumar Thakur | Contact Me ";
+  },
+
+  methods: {
+    alertDisplay() {
+      this.$swal("Heading", "this is a Heading", "OK");
+    },
+    submitForm() {
+      axios
+        .post("http://127.0.0.1:8000/api/messages", this.form)
+        .then((response) => {
+          console.log(response);
+          this.$swal("Heading", response.success, "OK");
+        })
+        .catch((error) => {
+          console.log(error);
+          this.errored = true;
+        })
+        .finally(() => (this.loading = false));
+    },
+  },
+  data() {
+    return {
+      form: {
+        name: null,
+        email: null,
+        phone: null,
+        message: null,
+      },
+    };
   },
 };
 </script>

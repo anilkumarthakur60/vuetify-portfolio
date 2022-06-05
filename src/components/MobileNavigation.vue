@@ -29,33 +29,22 @@ export default {
 
       {
         id: 3,
-        icon: "fas fa-images",
-        title: "Gallery",
-        path: { name: "Gallery" },
-      },
-      {
-        id: 4,
         icon: "fas fa-home",
         title: "Home",
         path: { name: "Home" },
       },
       {
+        id: 4,
+        icon: "fas fa-images",
+        title: "Gallery",
+        path: { name: "Gallery" },
+      },
+
+      {
         id: 5,
         icon: "fas fa-wallet",
         title: "About Me",
         path: { name: "About" },
-      },
-      {
-        id: 6,
-        icon: "fas fa-wallet",
-        title: "Contact Me",
-        path: { name: "Contact" },
-      },
-      {
-        id: 7,
-        icon: "fas fa-wallet",
-        title: "Contact Me",
-        path: { name: "Contact" },
       },
     ],
   }),
