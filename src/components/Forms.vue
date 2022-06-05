@@ -57,6 +57,7 @@
         <v-textarea
           outlined
           auto-grow
+          counter
           color="primary"
           v-model="form.message"
           :error-messages="errors"

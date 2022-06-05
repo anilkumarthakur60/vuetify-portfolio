@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="text-justify">
-      <h6 class="text-sm-h6 text-center font-weight-bold text-lg-h5">
+    <div class="">
+      <h6 class="text-sm-h6 d-flex justify-center font-weight-bold text-lg-h5">
         CONTACT
       </h6>
     </div>
@@ -19,11 +19,11 @@
             :class="{ 'on-hover': hover }"
           >
             <v-img src="../assets/anil.jpg" class="rounded-xl mb-5"> </v-img>
-            <div class="text-h4 mt-5">Anil Kumar Thakur</div>
-            <div class="text-h6 red--text">Full Stack Developer</div>
+            <div class="text-h4 mt-5">Er. Anil Kumar Thakur</div>
+            <div class="text-h6 red--text">Full Stack Web Developer</div>
             <div class="text-subtitle-2 mt-5">
-              I am available for freelance work. Connect with me via and call in
-              to my account.
+              I am available for freelance work. Please connect me with detail
+              below.
             </div>
             <div class="text-subtitle-2 mt-5">
               Phone: <span class="red--text">+977-9808711001</span>
