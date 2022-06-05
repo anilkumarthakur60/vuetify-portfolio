@@ -7,7 +7,7 @@
       <div class="text-h5 text-center font-weight-bold">My Portfolio</div>
     </v-col>
     <v-col>
-      <div class="">
+      <div>
         <div
           class="
             justify-center
@@ -44,7 +44,7 @@ export default {
         {
           name: "Backend",
           image: require("../assets/backend.webp"),
-          text: "Backend Developer with 1.5 year experience in  industry. Analyze data, processes, and codes to troubleshoot problems and identify areas for improvement also taking lead on projects as needed.",
+          text: "Backend Developer with 2 year experience in  industry. Analyze requirement, processes, and codes to troubleshoot problems and identify areas for improvement also taking lead on projects as needed.",
         },
         {
           name: "Project Management",

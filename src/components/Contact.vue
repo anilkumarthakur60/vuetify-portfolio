@@ -1,11 +1,11 @@
 <template>
-  <div class="">
-    <div class="text-justify my-5">
+  <div>
+    <div class="text-justify">
       <h6 class="text-sm-h6 text-center font-weight-bold text-lg-h5">
         CONTACT
       </h6>
     </div>
-    <div class="text-justify my-4">
+    <div class="text-justify my-2">
       <h6 class="text-sm-h5 text-center font-weight-bold text-lg-h4">
         Contact With Me
       </h6>

@@ -1,13 +1,29 @@
 <template>
   <v-row>
-    <v-col lg="6" md="6" sm="12">
+    <v-col lg="6" md="6" sm="12" class="justify-center align-self-center">
       <v-img src="@/assets/anil.jpg"> </v-img>
     </v-col>
     <v-col lg="6" md="6" sm="12">
-      <h3 class="font-weight-bold text-sm-h3 text-lg-h4 text-md-h3 my-5">
+      <h3
+        class="
+          font-weight-bold
+          d-flex
+          justify-center
+          text-sm-h3 text-lg-h4 text-md-h3
+          mx-auto
+        "
+      >
         About Me
       </h3>
-      <h5 class="font-weight-bold text-sm-h5 text-lg-h5 text-md-h5 my-5">
+      <h5
+        class="
+          font-weight-bold
+          d-flex
+          my-2
+          justify-center
+          text-sm-h6 text-lg-h6 text-md-h5
+        "
+      >
         Full Stack Web Developer
       </h5>
 
@@ -15,7 +31,7 @@
         I'm full Stack Web Developer, and very passionate and dedicated to my
         work. With 2 year plus years experience as a professional web developer,
         I have acquired the skills and knowledge necessary to make your project
-        a success. I enjoy every step of the design and developmet process, from
+        a success. I enjoy every step from design to developmet process with
         discussion and collaboration.
         <br />
         <br />
@@ -66,11 +82,8 @@
         Download My Resume
       </v-btn>
 
-      <v-btn depressed color="primary" class="ml-2" to="/contact-me">
+      <v-btn depressed color="primary" class="ml-lg-2 my-2" to="/contact-me">
         Contact Me
-      </v-btn>
-      <v-btn depressed color="primary" class="ml-2" @click="alertDisplay">
-        sweet alett
       </v-btn>
     </v-col>
   </v-row>

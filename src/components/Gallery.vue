@@ -3,7 +3,7 @@
     <v-col
       sm="12"
       md="4"
-      lg="4"
+      lg="3"
       v-for="(img, index) in imgs"
       :key="index"
       @click="() => showImg(index)"
@@ -53,28 +53,74 @@ export default {
       transparent: "rgba(255, 255, 255, 0)",
 
       imgs: [
-        require("../assets/portfolio/meriaamai.jpg"),
-        require("../assets/portfolio/videochat.jpg"),
-        require("../assets/portfolio/ecoomerce.jpg"),
-        require("../assets/portfolio/medmax.jpg"),
-        require("../assets/portfolio/medmaxchain.jpg"),
-        require("../assets/portfolio/blog.jpg"),
-        require("../assets/portfolio/visitnepal.jpg"),
-        require("../assets/portfolio/htmlportfolio.jpg"),
-        require("../assets/portfolio/calculator.jpg"),
+        {
+          title:
+            "Online Food Ordering (https://online.saffroncottages.com.au/)",
+          src: require("../assets/portfolio/saffroncottages.png"),
+        },
+        {
+          title: "Garjoo Classified (http://garjoonepal.com/)",
+          src: require("../assets/portfolio/garjoonepal.png"),
+        },
+
+        {
+          title: "Hospial Meriaamai Delivery System (https://meriaamai.org/)",
+          src: require("../assets/portfolio/meriaamai.jpg"),
+        },
+        {
+          title: "Telemedicine (https://telemedicine.akt.com.np/)",
+          src: require("../assets/portfolio/videochat.jpg"),
+        },
+        {
+          title: "Government Telemedicine (http://103.140.1.125/)",
+          src: require("../assets/portfolio/telemed.png"),
+        },
+        {
+          title:
+            "Single Vendor Ecommerce (https://ecommerce.anilkumarthakur.com.np/)",
+          src: require("../assets/portfolio/ecoomerce.jpg"),
+        },
+        {
+          title: "Medmax Erp (https://erp.medmax.com.np/auth/login)",
+          src: require("../assets/portfolio/medmaxerp.png"),
+        },
+        {
+          title:
+            "MedMax Innovation Pvt Ltd (https://www.medmaxinnovation.com/)",
+          src: require("../assets/portfolio/medmax.jpg"),
+        },
+        {
+          title: "Medmax Pharmacy (https://medmax.com.np/s)",
+          src: require("../assets/portfolio/medmaxchain.jpg"),
+        },
+        {
+          title: "Samana Media (https://www.samanamedia.com/)",
+          src: require("../assets/portfolio/samananews.png"),
+        },
+        {
+          title: "Blog CMS using laravel ,Bootstrap ",
+          src: require("../assets/portfolio/blog.jpg"),
+        },
+        {
+          title:
+            "Visit Nepal HTMl CSS JS (https://anilkumarthakur60.github.io/Visit-Nepal-2020-front-end-/)",
+          src: require("../assets/portfolio/visitnepal.jpg"),
+        },
+        {
+          title: "Video Conferencing",
+          src: require("../assets/portfolio/htmlportfolio.jpg"),
+        },
+        {
+          title:
+            "Calculator using HTML and Javascript (https://anilkumarthakur60.github.io/calculator/)",
+          src: require("../assets/portfolio/calculator.jpg"),
+        },
       ],
       visible: false,
-      index: 0, // default
+      index: 0,
     };
   },
   methods: {
-    showSingle() {
-      this.imgs = {
-        title: "this is a placeholder",
-        src: "https://i.loli.net/2018/11/10/5be6852dec46e.jpeg",
-      };
-      this.show();
-    },
     showImg(index) {
       this.index = index;
       this.visible = true;

@@ -7,7 +7,7 @@
         rounded="xl"
       >
         <v-img class="rounded-xl" :src="image"> </v-img>
-        <v-card-title class="">
+        <v-card-title>
           <h1 class="red--text text-h5 text-left ml-4 my-5">{{ name }}</h1>
         </v-card-title>
 

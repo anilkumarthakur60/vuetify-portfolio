@@ -28,10 +28,7 @@
     </v-navigation-drawer>
 
     <v-app-bar app>
-      <v-app-bar-nav-icon
-        class="d-none d-lg-flex"
-        @click="drawer = !drawer"
-      ></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title> </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -45,39 +42,31 @@
     </v-app-bar>
 
     <v-main>
-      <v-container class="mb-5">
+      <v-container>
         <router-view></router-view>
+        <template>
+          <v-row
+            class="grey lighten-2"
+            v-touch="{
+              left: () => swipe('Left'),
+              right: () => swipe('Right'),
+              up: () => swipe('Up'),
+              down: () => swipe('Down'),
+            }"
+            align="center"
+            justify="center"
+          >
+          </v-row>
+        </template>
       </v-container>
     </v-main>
-
-    <template>
-      <div class="d-lg-none d-xl-flex mt-5">
-        <mobile-navigation></mobile-navigation>
-      </div>
-    </template>
-
-    <template>
-      <v-row
-        class="grey lighten-2"
-        v-touch="{
-          left: () => swipe('Left'),
-          right: () => swipe('Right'),
-          up: () => swipe('Up'),
-          down: () => swipe('Down'),
-        }"
-        align="center"
-        justify="center"
-      >
-      </v-row>
-    </template>
   </v-app>
 </template>
 
 
 <script>
-import MobileNavigation from "./components/MobileNavigation.vue";
 export default {
-  components: { MobileNavigation },
+  components: {},
   data() {
     return {
       swipeDirection: "None",
