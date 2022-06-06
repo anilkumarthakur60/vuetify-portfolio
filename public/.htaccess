@@ -8,4 +8,7 @@
   RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 
+RewriteCond %{HTTP_HOST} ^www.anilkumarthakur.com.np [NC]
+RewriteRule ^(.*)$ https://anilkumarthakur.com.np/$1 [L,R=301]
+
 </IfModule>
