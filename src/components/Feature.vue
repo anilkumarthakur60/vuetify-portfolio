@@ -4,7 +4,7 @@
       <v-subheader class="justify-center"
         >VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</v-subheader
       >
-      <div class="text-h5 text-center font-weight-bold">My Portfolio</div>
+      <div class="text-h5 text-center font-weight-bold">My Feature</div>
     </v-col>
     <v-col>
       <div>

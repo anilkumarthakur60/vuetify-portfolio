@@ -40,13 +40,14 @@ export default {
           image: require("../assets/portfolio/garjoonepal.png"),
           text: "E-commerce Management System will primarily provide a platform to purchase, sell, distribution of items, product  through the internet. The E-commerce Management System will be a huge marketplace as most of the business are going  based on the internet.",
         },
+
         {
           name: "Government Telemedicine",
           image: require("../assets/portfolio/telemed.png"),
           text: ' <a href="https://ehealth.solupoly.org/admin/login/595752746157343d"> akjbs</a>.',
         },
         {
-          name: "Delivery Report Systerm",
+          name: "Hospital Delivery Report Systerm",
           image: require("../assets/portfolio/meriaamai.jpg"),
           text: "This system helps to manage the information related to health care and aids in the job completion of health care providers effectively. They manage the data related to all departments of healthcare such as, creative problem solving. Analyze data, and processes.",
         },
@@ -61,13 +62,15 @@ export default {
           image: require("../assets/portfolio/ecoomerce.jpg"),
           text: "E-commerce Management System will primarily provide a platform to purchase, sell, distribution of items, product  through the internet. The E-commerce Management System will be a huge marketplace as most of the business are going  based on the internet",
         },
+
         {
           name: "Medmax Innovation Pvt Ltd",
           image: require("../assets/portfolio/medmax.jpg"),
           text: "Medmax Innovation is an emerging IT company best known for good service quality and cost effective packages. They are about customer satisfaction rather than our earning. They believe in earning respect and trust is more valuable than earning money. ",
         },
+
         {
-          name: "Medmax Medical Holesale",
+          name: "Medmax Pharmacy",
           image: require("../assets/portfolio/medmaxchain.jpg"),
           text: "Med Max pvt. Ltd. is a Nepal based Medical Holsale & Clinical Chain company with established 2075. They vigorous Health related solutions, using the latest System tools and incorporating products in our service areas. ",
         },

@@ -115,6 +115,14 @@ export default {
             "Calculator using HTML and Javascript (https://anilkumarthakur60.github.io/calculator/)",
           src: require("../assets/portfolio/calculator.jpg"),
         },
+        {
+          title: "CMs using laravel +Vue+Inertia ",
+          src: require("../assets/portfolio/vueinertiablog.png"),
+        },
+        {
+          title: "Laravel Vue Inertia Query Filter ",
+          src: require("../assets/portfolio/vilterVue.png"),
+        },
       ],
       visible: false,
       index: 0,

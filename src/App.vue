@@ -74,15 +74,15 @@ export default {
       drawer: null,
       items: [
         { title: "Home", icon: "mdi-home", to: "/" },
-        { title: "Feature", icon: "mdi-star-circle", to: "/feature" },
-        { title: "Portfolio", icon: "mdi-face-man-profile", to: "/portfolio" },
         { title: "About Me", icon: "mdi-information-variant", to: "/about-me" },
-        { title: "Gallery", icon: "mdi-view-gallery-outline", to: "/gallery" },
         {
           title: "Contact Me",
           icon: "mdi-card-account-phone",
           to: "/contact-me",
         },
+        { title: "Feature", icon: "mdi-star-circle", to: "/feature" },
+        { title: "Gallery", icon: "mdi-view-gallery-outline", to: "/gallery" },
+        { title: "Portfolio", icon: "mdi-face-man-profile", to: "/portfolio" },
       ],
       right: null,
     };
